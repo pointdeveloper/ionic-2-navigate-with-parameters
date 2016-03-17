@@ -1,5 +1,5 @@
 # Ionic 2 navigation with parameters
-## The code provided here is for the tutorial [here](http://pointdeveloper.com/ionic-2-beginner-navigating-between-pages/) 
+## This code is for the tutorial [here](http://pointdeveloper.com/ionic-2-beginner-navigating-between-pages/) 
 
 ##### If you find any issues with code let me know in the Comments secction of my site [pointDeveloper.com](http://pointdeveloper.com)
 ###### Twitter: @pointdeveloper
