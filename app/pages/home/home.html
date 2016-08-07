@@ -1,11 +1,18 @@
-<ion-navbar *navbar>
+<ion-header>
+  <ion-navbar>
     <ion-title>
-        Home
+      Ionic Blank
     </ion-title>
-</ion-navbar>
+  </ion-navbar>
+</ion-header>
 
-<ion-content class="home">
-  
-    <button (click)="navigate()">Go To next</button>
-    
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+
+    <button (click)="navigate()">
+      Go to OtherPage
+    </button>
 </ion-content>
