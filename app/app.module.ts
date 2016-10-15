@@ -6,7 +6,8 @@ import { Other } from '../pages/other/other';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,Other
+    HomePage,
+    Other
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -14,7 +15,8 @@ import { Other } from '../pages/other/other';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,Other
+    HomePage,
+    Other
   ],
   providers: []
 })
