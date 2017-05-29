@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Other } from '../other/other';
+import { OtherPage } from '../other/other'
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -8,12 +9,12 @@ import { Other } from '../other/other';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
-    
   }
-navigate(){
-    this.navCtrl.push(Other,{
-            firstPassed: "value 1",
-            secondPassed: "value 2"
-          });
+  
+  navigate() {
+    this.navCtrl.push(OtherPage, {
+      firstPassed: "value 1",
+      secondPassed: "value 2"
+    })
   }
 }

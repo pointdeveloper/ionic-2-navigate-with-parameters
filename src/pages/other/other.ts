@@ -1,20 +1,29 @@
 import { Component } from '@angular/core';
-import { NavController,NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
+@IonicPage()
 @Component({
   selector: 'page-other',
-  templateUrl: 'other.html'
+  templateUrl: 'other.html',
 })
-export class Other {
-public firstParam:any;
-  public secondParam:any;
-  constructor(public navCtrl: NavController,public params:NavParams) {
-       this.firstParam = params.get("firstPassed");
-      this.secondParam = params.get("secondPassed");
+export class OtherPage {
+  public firstParam;
+  public secondParam;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams){
+
+    this.firstParam = navParams.get("firstPassed");
+    this.secondParam = navParams.get("secondPassed");
   }
 
   ionViewDidLoad() {
-    console.log('Hello Other Page');
+    console.log('ionViewDidLoad OtherPage');
+  }
+
+  goBack() {
+    console.log("popping");
+    this.navCtrl.pop();
   }
 
 }
